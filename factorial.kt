@@ -1,4 +1,4 @@
-// tail recursion
+//  recursion
 fun fac(n: Int): Int =  when (n) {
 	0 ->  1
 	else ->  n * fac(n-1)

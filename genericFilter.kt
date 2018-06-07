@@ -1,4 +1,4 @@
-// functional programming style
+// demonstration of how filter is implemented in functional programming style
 // filtern is an extension function that can be used on any list of any type
 // usage: 
 // val lst = listOf(1,2,3,4,5,6,7,8,9)

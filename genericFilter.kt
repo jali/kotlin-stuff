@@ -14,9 +14,9 @@ val <T> List<T>.head: T
 fun <T> List<T>.filtern(predi: (T) -> Boolean): List<T>  {
     fun loop(input: List<T>, output: List<T>, predi: (T) -> Boolean): List<T> =
         when {
-            input.isEmpty() 			      -> output
+            input.isEmpty() 			-> output
             (predi(input.head) == true) -> loop(input.tail, output + listOf(input.head), predi)
-            else 						            -> loop(input.tail, output, predi)
+            else 					    -> loop(input.tail, output, predi)
         }
     return loop(this, listOf(), predi)
 }

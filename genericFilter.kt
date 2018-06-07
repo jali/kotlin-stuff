@@ -16,7 +16,7 @@ fun <T> List<T>.filtern(predi: (T) -> Boolean): List<T>  {
         when {
             input.isEmpty() 			-> output
             (predi(input.head) == true) -> loop(input.tail, output + listOf(input.head), predi)
-            else 					    -> loop(input.tail, output, predi)
+            else                        -> loop(input.tail, output, predi)
         }
     return loop(this, listOf(), predi)
 }
